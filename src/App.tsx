@@ -306,7 +306,7 @@ You can now query this data. Try asking:
   // Trigger chat API
   const triggerChatRequest = async (chatText: string) => {
     try {
-      const response = await fetch("https://n8n-production-b41a.up.railway.app/webhook/chat", {
+      const response = await fetch("https://n8n-production-b41a.up.railway.app/webhook/DataMediQueryAI", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
