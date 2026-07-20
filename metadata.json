@@ -1,0 +1,8 @@
+{
+  "name": "Remix: AI Database Admin Chat",
+  "description": "A high-end chatbot interface for AI-powered database administration with secure n8n integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

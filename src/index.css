@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #020617;
+  --color-slate-900: #0f172a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .high-density-gradient {
+    background: radial-gradient(circle at top right, #0f172a, #020617);
+  }
+
+  .glass {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-800 rounded-full hover:bg-slate-700 transition-colors;
+  }
+
+  /* Typography improvements for markdown */
+  .prose {
+    --tw-prose-body: #cbd5e1;
+    --tw-prose-headings: theme('colors.white');
+    --tw-prose-links: #3b82f6;
+    --tw-prose-bold: theme('colors.white');
+    --tw-prose-counters: theme('colors.slate.500');
+    --tw-prose-bullets: theme('colors.slate.600');
+    --tw-prose-hr: rgba(255, 255, 255, 0.1);
+    --tw-prose-quotes: theme('colors.slate.100');
+    --tw-prose-quote-borders: theme('colors.slate.700');
+    --tw-prose-captions: theme('colors.slate.500');
+    --tw-prose-code: theme('colors.white');
+    --tw-prose-pre-code: theme('colors.slate.200');
+    --tw-prose-pre-bg: #0f172a;
+    --tw-prose-th-borders: rgba(255, 255, 255, 0.2);
+    --tw-prose-td-borders: rgba(255, 255, 255, 0.05);
+  }
+
+  .custom-scrollbar-light::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar-light::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 8px;
+  }
+  .custom-scrollbar-light::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 8px;
+  }
+  .custom-scrollbar-light::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-6px); }
+  20%, 40%, 60%, 80% { transform: translateX(6px); }
+}
+
+@keyframes progress {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes messageAppear {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
