@@ -70,10 +70,12 @@ The hospital database (`mediquery_db`) contains 4 tables:
 ## 👨‍💻 Team
 DataMed
 
-Members
+**Members**
+
 NAJIMDEEN ADAM OYEYMI ||
 GANIYU AZEEZ OLAYEMI
-   — University of Ibadan
+
+— University of Ibadan
 
 ## 📸 Screenshots
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/273d94a8-5741-4bec-95cc-f58645ab2994" />
