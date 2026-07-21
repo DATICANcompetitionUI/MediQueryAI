@@ -11,7 +11,8 @@ An AI-powered natural language interface for hospital databases. Ask questions i
 Use the credentials below to explore the app:
 
 - **Email:** adamnajimdeeen@gmail.com
-- **Password:** Adam@123.
+- **Password:** MediQuery
+- 
 - **Registration Code:** INV-2026-CLIENT01
 
 > Create a new account using the registration code above, or use the demo credentials to log in directly.
